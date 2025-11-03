@@ -9,7 +9,7 @@ public class Main {
 		double secondNumber =  156.01;
 		boolean isStudent = true;
 				
-		double result = speed + secondNumber;
+		double result = speed * secondNumber;
 		
 		System.out.println(result);
 		
