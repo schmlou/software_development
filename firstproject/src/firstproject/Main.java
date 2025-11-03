@@ -9,10 +9,9 @@ public class Main {
 		double secondNumber =  156.01;
 		boolean isStudent = true;
 				
-		for (int i = 0; i < 10; i = i + 1) {
-			System.out.println(i);
+		for (int i = 0; i <= 20; i++) {
+			System.out.println("Im a student " + i);
 		}
-		//testing branch merching
 	}
 
 }
