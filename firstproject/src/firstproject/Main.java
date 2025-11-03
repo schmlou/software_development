@@ -10,7 +10,7 @@ public class Main {
 		boolean isStudent = true;
 				
 		double result = speed * secondNumber;
-		
+		//test
 		System.out.println(result);
 		
 	}
