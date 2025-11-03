@@ -9,9 +9,9 @@ public class Main {
 		double secondNumber =  156.01;
 		boolean isStudent = true;
 				
-		double result = speed * secondNumber;
-		//testing branches
-		System.out.println(result);
+		for (int i = 0; i < 10; i = i + 1) {
+			System.out.println(i);
+		}
 		
 	}
 
