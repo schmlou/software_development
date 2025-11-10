@@ -61,4 +61,25 @@ public class Main {
 		double avrg = sum/arr.length;
 		return avrg;
 	}
+	
+		double[] [] numbComp = {
+				{9.2, 3.3, 4.9, 6.9, 5.1},
+				{1.5, 1.4, 5.6, 7.1, 2.1}
+		};
+		
+	static double compare(double [][] arr) {
+		double winner = Double.NEGATIVE_INFINITY; 
+		for (int i = 0; i < arr.length; i++) {
+			double x = arr[0][i];
+			double y = arr[1][i];
+			double larger = (x > y) ? x: y;
+			
+			if (larger > winner) {
+			winner = larger;
+			}
+		return winner;
+			}
+		}
+		
+
 }
