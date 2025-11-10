@@ -6,27 +6,27 @@ public class Main {
 //every project needs a main.java file
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*int age = 13;
+		int age = 13;
 		double speed = 3.66;
 		double secondNumber =  156.01;
 		boolean isStudent = true;
 				
 		for (int i = 0; i <= 20; i++) {
-			System.out.println("Im a student " + i);
+			//System.out.println("Im a student " + i);
 		}
 		
 		int j = 0;
 		while (j < 20 ) {
-			System.out.println("I'm a student " + j);
+			//System.out.println("I'm a student " + j);
 			j = j +1;
 		}
 		
 		
 		if (age >= 18) {
-			System.out.println("You are an adult!");
+			//System.out.println("You are an adult!");
 		} else {
-			System.out.println("You are a minor!");
-		}*/
+			//System.out.println("You are a minor!");
+		}
 		
 		int[] grades = {10, 5, 9, 7};
 		//int myGrades = grades[0];
@@ -45,7 +45,20 @@ public class Main {
 			sum = sum + numbers[i];
 		}
 		double average = sum/numbers.length;
-		System.out.println(average);
+		//System.out.println(average);
+		
+		double myOutput = getAverage(numbers);
+		System.out.println(myOutput);
+		
 	}
-
+	//function for calculating average in any array
+	static double getAverage(double[] arr) {
+		double sum = 0;
+		
+		for (int i = 0; i < arr.length; i++) {
+			sum = sum + arr[i];
+		}
+		double avrg = sum/arr.length;
+		return avrg;
+	}
 }
