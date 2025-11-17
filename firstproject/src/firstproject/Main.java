@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
 //every project needs a main.java file
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int age = 13;
 		double speed = 3.66;
@@ -79,7 +79,24 @@ public class Main {
 			}
 		return winner;
 			}
-		}
+		} */
+	
+	public static void main(String[] args) {
+		Person p1 = new Person("Louis", 23);
+		Person p2 = new Person("Maria", 20);
+		Person p3 = new Person("Tizi", 25);
+		//System.out.println(p1.name);
+		//System.out.println(p2.name);
+		p1.walk();
+		p2.walk();
 		
-
+		Car c1 = new Car("VW", 69, new Person("Markus", 26));
+		Car c2 = new Car("Benz", 187, p1);
+		c1.setSpeed(-50);
+		
+		System.out.println(c1.getOwner());
+		
+		p3.sayHi();
+		
+	}
 }
